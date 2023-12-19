@@ -1,16 +1,15 @@
 package com.example.demo.domains.users.Student.accounts;
 
 import com.example.demo.BaseEntity;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.experimental.SuperBuilder;
-import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 @Entity
 @Table(name = "account")

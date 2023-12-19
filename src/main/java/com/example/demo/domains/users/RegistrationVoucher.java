@@ -1,9 +1,6 @@
 package com.example.demo.domains.users;
 
-import com.example.demo.BaseEntity;
-import com.example.demo.domains.Company;
 import com.example.demo.domains.Studio;
-import com.example.demo.domains.lessons.LessonCredit;
 import com.example.demo.security.user.JwtUser;
 import com.example.demo.security.user.Position;
 import lombok.AllArgsConstructor;

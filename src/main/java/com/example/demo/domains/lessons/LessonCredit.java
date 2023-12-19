@@ -3,8 +3,8 @@ package com.example.demo.domains.lessons;
 import com.example.demo.BaseEntity;
 import com.example.demo.domains.users.Student.Student;
 import com.example.demo.security.user.JwtUser;
-import lombok.*;
 import com.fasterxml.jackson.annotation.JsonIncludeProperties;
+import lombok.*;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.*;

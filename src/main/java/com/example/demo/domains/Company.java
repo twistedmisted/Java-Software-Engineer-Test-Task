@@ -5,7 +5,10 @@ import com.example.demo.domains.users.Owner;
 import com.fasterxml.jackson.annotation.JsonIncludeProperties;
 import lombok.*;
 
-import javax.persistence.*;
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import java.util.Set;
 
 @Entity

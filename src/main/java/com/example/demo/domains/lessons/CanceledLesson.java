@@ -2,13 +2,13 @@ package com.example.demo.domains.lessons;
 
 import com.example.demo.BaseEntity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-import javax.persistence.*;
-
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.OneToOne;
 import java.sql.Timestamp;
 
 @Entity

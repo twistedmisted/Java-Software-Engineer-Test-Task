@@ -1,15 +1,13 @@
 package com.example.demo.domains;
 
-import com.example.demo.domains.lessons.ScheduleSlot;
 import com.example.demo.domains.lessons.LessonType;
-import com.example.demo.domains.users.Owner;
+import com.example.demo.domains.lessons.ScheduleSlot;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIncludeProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
 import javax.persistence.*;
-import java.util.*;
+import java.util.Set;
 
 @Entity
 @Getter

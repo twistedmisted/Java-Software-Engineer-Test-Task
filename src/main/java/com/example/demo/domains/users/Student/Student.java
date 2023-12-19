@@ -1,18 +1,22 @@
 package com.example.demo.domains.users.Student;
 
 import com.example.demo.domains.Studio;
-import com.example.demo.domains.lessons.*;
+import com.example.demo.domains.lessons.Attendance;
+import com.example.demo.domains.lessons.LessonCredit;
 import com.example.demo.domains.users.Student.accounts.Account;
 import com.example.demo.domains.users.Teacher;
 import com.example.demo.security.user.JwtUser;
 import com.example.demo.security.user.Position;
 import com.example.demo.security.user.Role;
-import com.fasterxml.jackson.annotation.*;
-import lombok.*;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonIncludeProperties;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 
 import javax.persistence.*;
-import java.util.HashSet;
 import java.util.Set;
 
 @Entity

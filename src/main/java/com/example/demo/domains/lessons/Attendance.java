@@ -1,11 +1,11 @@
 package com.example.demo.domains.lessons;
 
 import com.example.demo.domains.users.Student.Student;
+import com.fasterxml.jackson.annotation.JsonIncludeProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.*;
 
 import javax.persistence.*;
-
-import com.fasterxml.jackson.annotation.*;
-import lombok.*;
 
 @Entity
 @Setter

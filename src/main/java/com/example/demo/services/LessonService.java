@@ -1,29 +1,25 @@
 package com.example.demo.services;
 
-import com.example.demo.domains.Studio;
-import com.example.demo.domains.lessons.*;
-import com.example.demo.domains.users.Student.Student;
-import com.example.demo.domains.users.Teacher;
+import com.example.demo.domains.lessons.Attendance;
+import com.example.demo.domains.lessons.CanceledLesson;
+import com.example.demo.domains.lessons.Lesson;
+import com.example.demo.domains.lessons.PlainLesson;
 import com.example.demo.repositories.*;
 import com.example.demo.security.user.JwtUser;
 import com.example.demo.security.user.JwtUserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.GrantedAuthority;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.ZoneOffset;
-import java.util.*;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Objects;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @Service

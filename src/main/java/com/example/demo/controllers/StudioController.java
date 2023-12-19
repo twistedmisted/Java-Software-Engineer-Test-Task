@@ -1,6 +1,5 @@
 package com.example.demo.controllers;
 
-import com.example.demo.domains.BugReport;
 import com.example.demo.domains.Studio;
 import com.example.demo.domains.lessons.ScheduleSlot;
 import com.example.demo.domains.users.Owner;
@@ -8,15 +7,11 @@ import com.example.demo.repositories.ScheduleSlotRepository;
 import com.example.demo.repositories.StudioRepository;
 import com.example.demo.security.user.JwtUserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
-
 import java.time.LocalTime;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/studios")

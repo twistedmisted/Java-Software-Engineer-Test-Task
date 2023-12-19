@@ -5,7 +5,9 @@ import com.example.demo.domains.users.Owner;
 import com.example.demo.domains.users.Receptionist;
 import com.example.demo.domains.users.Student.Student;
 import com.example.demo.domains.users.Teacher;
-import com.example.demo.repositories.*;
+import com.example.demo.repositories.OwnerRepository;
+import com.example.demo.repositories.ReceptionistRepository;
+import com.example.demo.repositories.StudioRepository;
 import com.example.demo.services.StudentService;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -15,7 +17,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
-import java.util.*;
+import java.util.HashSet;
+import java.util.List;
 
 @Service
 public class JwtUserService {

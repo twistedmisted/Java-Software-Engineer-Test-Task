@@ -3,8 +3,12 @@ package com.example.demo.domains.lessons;
 import com.example.demo.domains.Studio;
 import com.example.demo.domains.users.Student.Student;
 import com.example.demo.domains.users.Teacher;
-import com.fasterxml.jackson.annotation.*;
-import lombok.*;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonIncludeProperties;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 import org.springframework.format.annotation.DateTimeFormat;
 

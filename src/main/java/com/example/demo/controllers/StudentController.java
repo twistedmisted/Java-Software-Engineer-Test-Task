@@ -2,7 +2,6 @@ package com.example.demo.controllers;
 
 import com.example.demo.domains.users.Student.Student;
 import com.example.demo.domains.users.Student.accounts.TransactionRepository;
-import com.example.demo.repositories.StudentRepository;
 import com.example.demo.services.StudentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
